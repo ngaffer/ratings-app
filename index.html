@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Natasha Gaffer - Ratings App</title>
+		<link rel="stylesheet" href="css/build/main.css">
+	</head>
+	<body>
+		<a onclick="displayForm()">rate ></a>
+		<form class="inactive" id="rateForm" action="/" method="post">
+			First name:<br>
+			<input type="text" name="firstname"><br>
+			Last name:<br>
+			<input type="text" name="lastname">
+			<button>Submit</button>
+		</form>
+	</body>
+	<script src="js/build/production.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCuR38wcC8qhOljIn6Tdt4fRBplwwEPkfk",
+	    authDomain: "ratings-app.firebaseapp.com",
+	    databaseURL: "https://ratings-app.firebaseio.com",
+	    storageBucket: "ratings-app.appspot.com",
+	    messagingSenderId: "1063671578599"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+</html>
