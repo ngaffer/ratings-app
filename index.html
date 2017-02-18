@@ -6,8 +6,13 @@
 		<link rel="stylesheet" href="css/build/main.css">
 	</head>
 	<body>
-		<a onclick="displayForm()">rate ></a>
-		<form class="inactive" id="rateForm" action="/" method="post"> <!-- action - path where to submit -->
+		<p id="header">Please sign in to see stuff.</p>
+		<button id="signInButton">Sign in with Google</button>
+		<button id="signOutButton">Sign out</button>
+		<br><br>
+		<h3>This is a company</h3>
+		<div id="formContainer"></div>
+		<form class="inactive" id="rateForm" action="https://ratings-app.firebaseio.com/" method="post"> 
 			<fieldset>
 				<legend>Questions:</legend>
 				Question 1:<br>
@@ -23,17 +28,6 @@
 			</fieldset>
 		</form>
 	</body>
-	<script src="js/build/production.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyCuR38wcC8qhOljIn6Tdt4fRBplwwEPkfk",
-	    authDomain: "ratings-app.firebaseapp.com",
-	    databaseURL: "https://ratings-app.firebaseio.com",
-	    storageBucket: "ratings-app.appspot.com",
-	    messagingSenderId: "1063671578599"
-	  };
-	  firebase.initializeApp(config);
-	</script>
+	<script src="js/build/production.js"></script>
 </html>
