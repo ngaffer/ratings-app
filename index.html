@@ -12,19 +12,20 @@
 		<br><br>
 		<h3>This is a company</h3>
 		<div id="formContainer"></div>
-		<form class="inactive" id="rateForm" action="https://ratings-app.firebaseio.com/" method="post"> 
+		<!-- <form class="inactive" id="rateForm" action="https://ratings-app.firebaseio.com/" method="post"> -->
+		<form class="inactive" id="rateForm"> 
 			<fieldset>
 				<legend>Questions:</legend>
 				Question 1:<br>
-				<input type="checkbox" name="q1answer1" value="Yes"> Yes<br>
-				<input type="checkbox" name="q1answer2" value="No"> No<br>
+				<input type="radio" name="question1" value="Yes"> Yes<br>
+				<input type="radio" name="question1" value="No"> No<br>
 				Question 2:<br>
-				<input type="checkbox" name="q2answer1" value="Yes"> Yes<br>
-				<input type="checkbox" name="q2answer2" value="No"> No<br>
+				<input type="radio" name="question2" value="Yes"> Yes<br>
+				<input type="radio" name="question2" value="No"> No<br>
 				Question 3:<br>
-				<input type="checkbox" name="q3answer1" value="Yes"> Yes<br>
-				<input type="checkbox" name="q3answer2" value="No"> No<br>
-				<button type="button">Submit</button>
+				<input type="radio" name="question3" value="Yes"> Yes<br>
+				<input type="radio" name="question3" value="No"> No<br>
+				<button id="submitButton" type="button">Submit</button>
 			</fieldset>
 		</form>
 	</body>
